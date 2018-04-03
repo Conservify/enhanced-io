@@ -18,10 +18,11 @@
 
 #ifdef __cplusplus
 
-#ifndef _RING_BUFFER_
-#define _RING_BUFFER_
+#pragma once
 
 #include <stdint.h>
+
+namespace eio {
 
 // Define constants and variables for buffering incoming serial data.  We're
 // using a ring buffer (I think), in which head is the index of the location
@@ -137,6 +138,6 @@ bool RingBufferN<N>::isFull()
   return (nextIndex(_iHead) == _iTail);
 }
 
-#endif /* _RING_BUFFER_ */
+}
 
 #endif /* __cplusplus */

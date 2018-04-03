@@ -16,10 +16,11 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef _SERCOM_CLASS_
-#define _SERCOM_CLASS_
+#pragma once
 
 #include "sam.h"
+
+namespace eio {
 
 #define SERCOM_FREQ_REF 48000000
 
@@ -214,4 +215,5 @@ class SERCOM
 		void initClockNVIC( void ) ;
 };
 
-#endif
+}
+

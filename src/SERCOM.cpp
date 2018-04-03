@@ -20,6 +20,8 @@
 #include "variant.h"
 #include "delay.h"
 
+namespace eio {
+
 SERCOM::SERCOM(Sercom* s)
 {
   sercom = s;
@@ -691,4 +693,6 @@ void SERCOM::initClockNVIC( void )
   {
     /* Wait for synchronization */
   }
+}
+
 }

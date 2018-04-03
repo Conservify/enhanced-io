@@ -17,14 +17,13 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#ifndef TwoWire_h
-#define TwoWire_h
-
 #include "Stream.h"
 #include "variant.h"
 
 #include "SERCOM.h"
 #include "RingBuffer.h"
+
+namespace eio {
 
  // WIRE_HAS_END means Wire has end()
 #define WIRE_HAS_END 1
@@ -104,4 +103,5 @@ class TwoWire : public Stream
   extern TwoWire Wire5;
 #endif
 
-#endif
+}
+
