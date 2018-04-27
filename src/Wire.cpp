@@ -24,7 +24,7 @@ extern "C" {
 #include <Arduino.h>
 #include <wiring_private.h>
 
-#include "Wire.h"
+#include "eio/Wire.h"
 
 namespace eio {
 
