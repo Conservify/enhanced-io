@@ -1,7 +1,9 @@
 @Library('conservify') _
 
+conservifyProperties()
+
 timestamps {
     node () {
-        conservifyBuild(name: 'enhanced-io', repository: 'https://github.com/Conservify/enhanced-io.git')
+        conservifyBuild(name: 'enhanced-io')
     }
 }
