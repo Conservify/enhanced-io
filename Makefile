@@ -6,10 +6,11 @@ $(BUILD):
 	mkdir -p $(BUILD)
 
 all: $(BUILD)
-	cd $(BUILD) && cmake ../ && make
+	cd $(BUILD) && cmake ../
+	$(MAKE) -C $(BUILD)
 
 test: all
-	cd $(BUILD) && make test
+	make -C $(BUILD) test
 
 clean:
 	rm -rf $(BUILD)
