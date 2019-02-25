@@ -16,9 +16,9 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include "eio/SERCOM.h"
 #include "variant.h"
 #include "delay.h"
+#include "eio/SERCOM.h"
 
 namespace eio {
 

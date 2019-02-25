@@ -22,7 +22,9 @@
 
 namespace eio {
 
+#if !defined(SERCOM_FREQ_REF)
 #define SERCOM_FREQ_REF 48000000
+#endif
 
 typedef enum
 {
